@@ -35,7 +35,7 @@ target_link_libraries(${FARLANDS_LIB_NAME} PUBLIC glfw)
 ################################################################################
 
 add_subdirectory(3rd-party/glad)
-target_link_libraries(${FARLANDS_LIB_NAME} PUBLIC glad)
+target_link_libraries(${FARLANDS_LIB_NAME} PUBLIC glad ${CMAKE_DL_LIBS})
 
 ################################################################################
 # CGLM
