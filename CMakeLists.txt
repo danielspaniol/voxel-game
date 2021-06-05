@@ -22,3 +22,14 @@ add_executable(${FARLANDS_BIN_NAME} ${FARLANDS_BIN_SRC})
 
 target_include_directories(${FARLANDS_LIB_NAME} PUBLIC src)
 target_link_libraries(${FARLANDS_BIN_NAME} PRIVATE ${FARLANDS_LIB_NAME})
+
+################################################################################
+# GLFW
+################################################################################
+
+find_package(glfw3 REQUIRED)
+target_link_libraries(${FARLANDS_LIB_NAME} PUBLIC glfw)
+
+################################################################################
+# GLAD
+################################################################################
