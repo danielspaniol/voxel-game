@@ -1,7 +1,7 @@
-cmake_minimum_required(VERSION 2.8.7)
-project(logger C)
+cmake_minimum_required(VERSION 3.3)
+project(logger VERSION 1.0)
 
-set(CMAKE_C_FLAGS "-Wall -std=c89")
+set(CMAKE_C_FLAGS "-Wall -std=c89 -Wno-implicit-function-declaration -Wno-stringop-truncation")
 set(CMAKE_C_FLAGS_RELEASE "-O2 -DNDEBUG")
 set(CMAKE_C_FLAGS_DEBUG "-g")
 
