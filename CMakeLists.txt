@@ -11,7 +11,9 @@ set(FARLANDS_LIB_NAME "${FARLANDS_NAME}-engine")
 set(FARLANDS_BIN_NAME "${FARLANDS_NAME}")
 
 set(FARLANDS_LIB_SRC
+    src/farlands/gfx/gl_ctx.c
     src/farlands/lib/prelude.c
+    src/farlands/lib/exit.c
 )
 set(FARLANDS_BIN_SRC
     src/farlands/main.c
