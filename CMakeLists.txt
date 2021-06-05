@@ -33,3 +33,6 @@ target_link_libraries(${FARLANDS_LIB_NAME} PUBLIC glfw)
 ################################################################################
 # GLAD
 ################################################################################
+
+add_subdirectory(3rd-party/glad)
+target_link_libraries(${FARLANDS_LIB_NAME} PUBLIC glad)
