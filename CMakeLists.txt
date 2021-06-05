@@ -26,6 +26,13 @@ target_include_directories(${FARLANDS_LIB_NAME} PUBLIC src)
 target_link_libraries(${FARLANDS_BIN_NAME} PRIVATE ${FARLANDS_LIB_NAME})
 
 ################################################################################
+# C LOGGER
+################################################################################
+
+add_subdirectory(3rd-party/c-logger)
+target_link_libraries(${FARLANDS_LIB_NAME} PUBLIC logger)
+
+################################################################################
 # GLFW
 ################################################################################
 
